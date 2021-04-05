@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.PrincipalControleur">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="422.0" prefWidth="620.0" style="-fx-background-color: black; -fx-border-width: 5px; -fx-border-color: white;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" minWidth="150.0" prefHeight="71.0" prefWidth="477.0" text="Bienvenue sur notre Serveur de Jeux !" textAlignment="CENTER" textFill="#bd39ff">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="75.0" prefWidth="602.0" spacing="30.0">
+               <children>
+                  <Button fx:id="btn_info_pendu" minHeight="50.0" minWidth="150.0" mnemonicParsing="false" onAction="#info_pendu" style="-fx-background-color: white; -fx-border-color: #bd39ff; -fx-border-width: 2px;" text="Pendu">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_info_allumette" minHeight="50.0" minWidth="150.0" mnemonicParsing="false" onAction="#info_allumettes" style="-fx-background-color: white; -fx-border-color: #bd39ff; -fx-border-width: 2px;" text="Allumettes">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_info_ticTacToe" minHeight="50.0" minWidth="150.0" mnemonicParsing="false" onAction="#info_ticTacToe" style="-fx-background-color: white; -fx-border-color: #bd39ff; -fx-border-width: 2px;" text="Tic-Tac-Toe">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="180.0" prefWidth="590.0">
+               <children>
+                  <VBox fx:id="box_info_tic_tac_toe" alignment="CENTER" maxWidth="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="326.0">
+                     <children>
+                        <Label alignment="CENTER" minWidth="150.0" prefHeight="85.0" prefWidth="335.0" text="Le Tic Tac Toe !" textFill="#bd39ff">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                           <children>
+                              <Button fx:id="btn_jouer_tic_tac_toe" minHeight="25.0" minWidth="100.0" mnemonicParsing="false" onAction="#ticTacToe" prefWidth="265.0" text="Jouer" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="150.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox fx:id="box_info_pendu" alignment="CENTER" maxWidth="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="326.0">
+                     <children>
+                        <Label alignment="CENTER" minWidth="150.0" prefHeight="85.0" prefWidth="335.0" text="Le Jeu du Pendu !" textFill="#bd39ff">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                           <children>
+                              <Button fx:id="btn_jouer_pendu" minHeight="25.0" minWidth="100.0" mnemonicParsing="false" onAction="#pendu" text="Jouer" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="box_info_allumettes" alignment="CENTER" maxWidth="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0">
+                     <children>
+                        <Label alignment="CENTER" minWidth="-Infinity" prefHeight="25.0" prefWidth="180.0" text="Le Jeu des Allumettes !" textFill="#bd39ff">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tf_nomJoueur" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="68.0" promptText="Pseudo">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                           <children>
+                              <Button fx:id="btn_jouer_allumettes" minHeight="25.0" minWidth="100.0" mnemonicParsing="false" onAction="#jouer_allumettes" text="Jouer" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets top="30.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>
